@@ -27,9 +27,9 @@ const Nft = () => {
 
     const sdk = new ThirdwebSDK(
       provider.getSigner(),
-      'https://rinkeby.infura.io/v3/a464b9152d8c466c8a94a514fce8e837'
+      'https://eth-rinkeby.alchemyapi.io/v2/M8gtkiJcmIxg-fdM7KV3gWfkSZiKQHBT'
     )
-    return sdk.getNFTModule('0x66a576A977b7Bccf510630E0aA5e450EC11361Fa')
+    return sdk.getNFTModule('0x88f6D6dE9b030811c82A85461A1Ff31Aba4f74eB')
   }, [provider])
 
   // get all NFTs in the collection
@@ -49,11 +49,11 @@ const Nft = () => {
 
     const sdk = new ThirdwebSDK(
       provider.getSigner(),
-      'https://rinkeby.infura.io/v3/a464b9152d8c466c8a94a514fce8e837'
+      'https://eth-rinkeby.alchemyapi.io/v2/M8gtkiJcmIxg-fdM7KV3gWfkSZiKQHBT'
     )
 
     return sdk.getMarketplaceModule(
-      '0x93A771F7ce845C33381f677489cF21a5964EDD0b'
+      '0x9efe4FC799F00eE76b4aF871d3C1F5613D53D085'
     )
   }, [provider])
 
